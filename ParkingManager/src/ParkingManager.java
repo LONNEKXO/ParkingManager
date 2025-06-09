@@ -137,7 +137,7 @@ public class ParkingManager {
             @Override
             public void windowClosing(WindowEvent e) {
                 saveParkingSpots();
-                System.exit(0); // Zamknij aplikację po zamknięciu okna głównego
+                System.exit(0);
             }
         });
 
@@ -153,7 +153,7 @@ public class ParkingManager {
             public void actionPerformed(ActionEvent e) {
                 mainFrame.dispose();
 
-                JButton clickedButton = (JButton) e.getSource(); // Pobieramy przycisk, na którym kliknięto
+                JButton clickedButton = (JButton) e.getSource();
 
                 String spotNumberStr = JOptionPane.showInputDialog(mainFrame, "Podaj numer miejsca:");
 
